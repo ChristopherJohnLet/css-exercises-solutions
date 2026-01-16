@@ -8,10 +8,15 @@ body {
   font-family: Besley, serif;
 }
 
-.header {
+nav {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 8px 16px;
 }
 
 .profile-image {
@@ -45,4 +50,19 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.left {                 /* base on reasearch u can combine left and right like ".left.right" */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
